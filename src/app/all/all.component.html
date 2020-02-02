@@ -1,0 +1,30 @@
+﻿<div class="eBorder">
+    <div class="text-center"><h3>All Events</h3><mat-divider></mat-divider></div>
+</div>
+
+<div class="band"> 
+        <div class="card2" *ngFor="let event of events">
+                <mat-card class="card"  *ngIf="event.approve" >
+                  <mat-card-header >
+                      <div mat-card-avatar class="example-header-image"></div>
+                      <mat-card-title>{{event.eventname}}</mat-card-title>
+                      <mat-card-subtitle>{{event.host}} - {{event.venue}}</mat-card-subtitle>
+                    </mat-card-header>
+                  <img mat-card-image src="http://www.alanyaevents.com/wp-content/uploads/2017/09/alanya-music-events-and-festivals.jpg">
+                  <mat-card-content>
+                        <p>
+                            {{event.description}}
+                        </p>
+                      </mat-card-content>
+                  <mat-card-actions>
+                      <div class="example-button-row">
+                      <button mat-flat-button color="primary" (click)="join(event.count)" *ngIf="event.join=='Join'">{{ event.join }}</button>
+                      <button mat-flat-button color="primary" (click)="join(event.count)" *ngIf="event.join=='Quit'">{{ event.join }}</button>
+                      </div>
+                    </mat-card-actions>
+                    <div class="badges">
+                            Going: {{ event.participant }}
+                        </div>
+                </mat-card>
+            </div>
+  </div>
