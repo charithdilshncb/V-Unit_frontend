@@ -1,0 +1,59 @@
+
+  .slider {
+    height: 250px;
+    position: relative;
+    padding-bottom: 2%;
+    background-color: black;
+  }
+  .slide1,.slide2,.slide3,.slide4,.slide5 {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+  }
+  .slide1 {
+    background: url(https://www.desktop-background.com/download/1600x900/2013/10/10/651926_funny-wallpapers-with-quotes-1-hd-widescreen-wallpapers_1920x1080_h.jpg)no-repeat center;
+        background-size: cover;
+      animation:fade 3s infinite;
+  -webkit-animation:fade 3s infinite;
+  -webkit-animation-duration: 15s;
+  animation-duration: 15s;
+  
+  } 
+  .slide2 {
+    background: url(https://cdn.geckoandfly.com/wp-content/uploads/2013/06/pacman2560x1-24.jpg)no-repeat center;
+        background-size: cover;
+      animation:fade2 3s infinite;
+  -webkit-animation:fade2 3s infinite;
+  -webkit-animation-duration: 15s;
+  animation-duration: 15s;
+  }
+  .slide3 {
+      background: url(https://terrainfitness.co/wp-content/uploads/2018/10/20732-Suzy-Kassem-Quote-Doubt-kills-more-dreams-than-failure-ever-will.jpg)no-repeat center;
+        background-size: cover;
+      animation:fade3 3s infinite;
+  -webkit-animation:fade3 3s infinite;
+  -webkit-animation-duration: 15s;
+  animation-duration: 15s;
+  }
+  @keyframes fade
+  {
+    100%   {opacity:1}
+    100% { opacity: 1}
+    100% { opacity: 1}
+    100% { opacity: 1}
+  }
+  @keyframes fade2
+  {
+    100%   {opacity:1}
+    100% { opacity: 1}
+    100% { opacity: 1 }
+    100% { opacity: 1}
+  }
+  @keyframes fade3
+  {
+    100%   {opacity:1}
+    100% { opacity: 1}
+    100% { opacity: 1}
+    100% { opacity: 1}
+  }
+  

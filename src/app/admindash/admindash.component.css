@@ -1,0 +1,19 @@
+.example-button-row button,
+.example-button-row a {
+  margin-right: 8px;
+}
+.section {
+  padding: 1% 2% 1% 1%;
+  position: relative;
+  text-align: center;
+  width: 100%;
+  max-width: 1240px;
+}
+.container{
+  background-color: white;
+  width: 100%;
+  max-width: 1240px;
+  margin: 0 auto;
+  padding: 2% 0%;
+
+}

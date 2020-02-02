@@ -1,0 +1,47 @@
+﻿<!-- <div class="alert">Approved</div> -->
+<mat-tab-group mat-stretch-tabs class="example-stretched-tabs mat-elevation-z4">
+        <mat-tab>
+                <ng-template matTabLabel>
+                        <span matBadge="6" matBadgeOverlap="false" matBadgePosition="above after" >Events</span>
+                    </ng-template>
+            <div class = "section"><h3>Submissions</h3></div>
+            <div class="panels">
+                    <div *ngFor ="let eve of events">
+                <mat-expansion-panel *ngIf="!eve.approve">
+                        <mat-expansion-panel-header>
+                       {{eve.eventname}}
+                        </mat-expansion-panel-header>
+                      
+                        <p>{{eve.host}}</p>
+                      
+                        <mat-action-row>
+                          <button mat-raised-button color="primary" (click)="approveEvent(eve.id)">Approve</button>
+                       
+                        </mat-action-row>
+                      </mat-expansion-panel>
+                </div>   
+                </div>
+        </mat-tab>
+        <mat-tab><ng-template matTabLabel>
+                <span matBadge="3" matBadgeOverlap="false" matBadgePosition="above after" matBadgeColor="accent">Requests</span>
+            </ng-template>  
+                <div class = "section"><h3>Submissions</h3></div>
+                <div class="panels">
+                                <div *ngFor ="let req of request">
+                <mat-expansion-panel *ngIf="!req.approve">
+                        <mat-expansion-panel-header>
+                          {{req.title}}
+                        </mat-expansion-panel-header>
+                      
+                        <p>{{req.location}}</p>
+                      
+                        <mat-action-row>
+                                <button mat-raised-button color="primary" (click)="approveReq(req.id)" >Approve</button>
+                                
+                        </mat-action-row>
+                      </mat-expansion-panel>
+                    </div>
+                        </div>
+        </mat-tab>
+      </mat-tab-group>
+      

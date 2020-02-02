@@ -1,0 +1,28 @@
+﻿<div class="navContainer">
+<mdb-navbar SideClass="navbar sticky-top navbar-expand-lg navbar">
+    <mdb-navbar-brand>
+        <a class="navbar-brand"  href="#">V-Unit</a>
+    </mdb-navbar-brand>
+    <links>
+        <div class="navbar-collapse">
+            <ul class="navbar-nav mr-auto mt-lg-0">
+                <li class="nav-item active">
+                    <a class="nav-link" [routerLink]="['']">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link"[routerLink]="['/all']" *ngIf="log">All Events</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link"[routerLink]="['/create']" *ngIf="role!='volanteer' && log">Create Event</a>
+                </li>
+                <li class="nav-item">
+                        <a class="nav-link"[routerLink]="['/submit']" *ngIf="role!='NGO' && log">Submit Request</a>
+                    </li>
+                <li class="nav-item">
+                    <a class="nav-link" [routerLink]="['/login']" *ngIf="authenticationService.isLoggedIn()">Sign Out</a>
+                </li>
+            </ul>
+        </div>
+    </links>
+</mdb-navbar>
+</div>

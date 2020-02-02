@@ -1,0 +1,10 @@
+﻿
+<div class="container">
+    <h1>Hi {{currentUser.firstName}}!</h1>
+<h3>Smile</h3>
+<p><a [routerLink]="['/admindash']" *ngIf="isAdmin">Go to Admin panel</a></p>
+<!-- <banner></banner> -->
+</div>
+
+<events></events>
+<requests></requests>

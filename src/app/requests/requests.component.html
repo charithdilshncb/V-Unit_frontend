@@ -1,0 +1,23 @@
+﻿<div class = "rBorder">
+<div class="text-center"><h3>Popular Requests</h3><mat-divider></mat-divider></div>
+<div *ngFor="let req of request ">
+<mat-accordion *ngIf ="req.approve" >
+        <mat-expansion-panel (opened)="panelOpenState = true"
+        (closed)="panelOpenState = false">
+          <mat-expansion-panel-header>
+            <mat-panel-title>
+              {{req.title}}
+            </mat-panel-title>
+            <mat-panel-description>
+              {{req.location}}
+            </mat-panel-description>
+          </mat-expansion-panel-header>
+          <mat-panel-description>
+            {{req.brief}}
+            </mat-panel-description>
+        </mat-expansion-panel>
+        
+        
+      </mat-accordion>
+    </div>
+      </div>

@@ -1,0 +1,84 @@
+.example-button-row button,
+.example-button-row a {
+  margin-right: 8px;
+}
+.data{
+  margin: 0%;
+  background-color: aqua;
+  position: inherit;
+}
+.badges{
+  margin-right: 50%;
+}
+.eBorder{
+  width: 100%;
+    max-width: 1240px;
+    margin: 0 auto;
+
+padding-top: 0%;
+padding-bottom: 2%;
+}
+.example-card {
+    max-width: 400px;
+  }
+  
+  .example-header-image {
+    background-image: url('https://cdn3.iconfinder.com/data/icons/avatars-15/64/_Ninja-2-512.png');
+    background-size: cover;
+  }
+
+  .band {
+    width: 100%;
+    max-width: 1240px;
+    margin: 0 auto;
+     
+    display: grid;
+     
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    grid-gap: 20px;
+  }
+
+  @media only screen and (min-width: 500px) {
+    .band {
+      grid-template-columns: 1fr 1fr;
+    }  
+  }
+  @media only screen and (min-width: 850px) {
+    .band {
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+  }
+
+  .card {
+    background: white;
+    text-decoration: none;
+    color: #444;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
+    position: relative;
+    top: 0;
+    transition: all .1s ease-in;
+  }
+  .card:hover {
+    top: -2px;
+    box-shadow: 0 4px 5px rgba(0,0,0,0.2);
+  }
+
+  .card .thumb {
+    padding-bottom: 60%;
+    background-size: cover;
+    background-position: center center;
+  }
+  .card p { 
+    flex: 1; /* make p grow to fill available space*/
+    line-height: 1.4;
+  }
+  @media only screen and (min-width: 500px) {     
+  .item-1 {
+    grid-column: 1/ span 2;
+  }
+   
+}
